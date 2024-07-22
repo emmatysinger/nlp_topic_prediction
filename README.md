@@ -94,6 +94,18 @@ What could we improve accross the board to make a better, more useful pipeline
 ?  Give a few example, and if you wish, implement some alternative or
 complementary strategies and compare them with the current baseline.
 
+### Model Improvements: 
+1. Remove stop words and use n-grams to add more context to the features.
+   - This improved the F1-score to 0.669 (from 0.649)
+2. Perform hyperparameter to optimize the model parameters.
+   - This improved the F1-score to 0.686
+   - Optimal parameters: max_depth = 20 and min_split = 5
+3. Use ensemble methods such as random forest which includes multiple decision trees
+   - This improved the F1-score to 0.739
+   - Optimal parameters: max_depth = None, min_split = 5, num_estimators = 100
+  
+**Final insight** – These 3 improvements focus on the data preprocessing and optimizing the classifier model we use. In total the F1 score increased by 0.09 percentage points.
+
 ## Setting up a web service
 
 Using the libraries of your choice, implement a web applications exposing
