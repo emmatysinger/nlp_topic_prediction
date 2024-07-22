@@ -111,3 +111,8 @@ complementary strategies and compare them with the current baseline.
 Using the libraries of your choice, implement a web applications exposing
 a route for submitting a sample, and another route to get the content, the
 prediction, and the explanations, for of the latest submitted sample.
+
+The web service uses Flask for the backend and a basic HTML landing page. To use the web service run and open in the url in a web browser:
+```
+python app.py
+```
