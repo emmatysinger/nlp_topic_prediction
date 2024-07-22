@@ -19,10 +19,41 @@ Such a pipeline is given as a starting point in the script
 
 ## Performance analysis
 
-What metrics could be relevant to assess the performance of our classifier ?
+_What metrics could be relevant to assess the performance of our classifier ?_
 
-What can we say about the performance of the classifier we just trained for
-this task ?
+### Relevant Metrics to Assess Classifier Performance
+
+1. **Accuracy**: The proportion of correctly classified instances out of the total instances
+
+2. **Precision**: Shows the classifier’s ability to avoid false positives.
+
+3. **Recall**: Shows the classifier’s ability to capture all true positives.
+
+4. **F1 Score**: Balances both precision and recall and is particularly useful since the dataset is imbalanced.
+
+5. **Confusion Matrix**: Visual evaluation of the classifier.
+
+_What can we say about the performance of the classifier we just trained for
+this task ?_
+
+### Analysis of the Classifier's Performance
+
+Here are the results:
+
+- **Accuracy**: 0.9082580987785449
+- **Precision**: 0.638085742771685
+- **Recall**: 0.6611570247933884
+- **F1 Score**: 0.6494165398274987
+
+1. An accuracy of ~91% shows that the classifier is generally performing well in terms of overall correct classifications, but because the dataset is imbalanced this is misleading. 
+
+2. A precision of ~64% means that when the classifier predicts a positive label, it is correct 64% of the time.
+
+3. A recall of ~66% means that the classifier is able to identify 66% of the actual positive instances.
+
+4. The F1 score of ~65% provides a balance between precision and recall.
+
+**Final Insight** – The classifier's high accuracy suggests it performs well overall, but the lower precision and recall indicate room for improvement in identifying positive cases.
 
 Add all the code that you wish, that can support this analysis.
 
