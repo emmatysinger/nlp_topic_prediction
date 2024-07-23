@@ -92,6 +92,7 @@ documentation](https://scikit-learn.org/stable/auto_examples/tree/plot_unveil_tr
 To calculate the explainability, I followed the suggested roadmap. First, the function retrieves the path of features traversed by the decision tree for a given sample. Then for each feature in this path, the importance score was calaulated. This was the difference between the impurity score for the current feature and the previous feature, which is a way of calculating how a feature helps in seperating the positive and negative samples. Finally, the features are ranked by their respective importance scores and the top 10 are returned. 
 
 **Example 1**
+
 Important features for sample: It is important if Christianity is being damaged by it. If
 people who "speak in tongues" make claims that they are
 miraculously speaking a foreign language through the power of
@@ -108,18 +109,19 @@ can lead to forms of worship which are more about the
 worshipper showing off than genuine praise for God; one of the
 things Jesus warned us about.
 
-Feature: god, Importance: 0.0541
-Feature: win, Importance: 0.0168
-Feature: government, Importance: 0.0161
-Feature: gun, Importance: 0.0145
-Feature: look, Importance: 0.0118
-Feature: sci, Importance: 0.0100
-Feature: crap, Importance: 0.0098
-Feature: memory, Importance: 0.0096
-Feature: 50, Importance: 0.0095
-Feature: services, Importance: 0.0092
+- Feature: god, Importance: 0.0541 
+- Feature: win, Importance: 0.0168
+- Feature: government, Importance: 0.0161
+- Feature: gun, Importance: 0.0145
+- Feature: look, Importance: 0.0118
+- Feature: sci, Importance: 0.0100
+- Feature: crap, Importance: 0.0098
+- Feature: memory, Importance: 0.0096
+- Feature: 50, Importance: 0.0095
+- Feature: services, Importance: 0.0092
 
 **Example 2**
+
 Important features for sample: Subject: RE: Europe vs. Muslim Bosnians
 From: f54oguocha
 Date: 13 MAY 93 02:28:53 GMT
@@ -152,18 +154,19 @@ Bosnian, is being carried out under the cover of the Serbo-Croat war.
 Regards,
 
 Mike.
-Feature: church, Importance: 0.0731
-Feature: freedom religion, Importance: 0.0646
-Feature: inside, Importance: 0.0627
-Feature: right, Importance: 0.0572
-Feature: god, Importance: 0.0541
-Feature: interesting, Importance: 0.0353
-Feature: 1920, Importance: 0.0298
-Feature: bible, Importance: 0.0141
-Feature: jesus, Importance: 0.0106
-Feature: religion, Importance: 0.0084
+- Feature: church, Importance: 0.0731
+- Feature: freedom religion, Importance: 0.0646
+- Feature: inside, Importance: 0.0627
+- Feature: right, Importance: 0.0572
+- Feature: god, Importance: 0.0541
+- Feature: interesting, Importance: 0.0353
+- Feature: 1920, Importance: 0.0298
+- Feature: bible, Importance: 0.0141
+- Feature: jesus, Importance: 0.0106
+- Feature: religion, Importance: 0.0084
 
 **Example 3**
+
 Important features for sample: 
 The biblical arguments against homosexuality are weak at best, yet
 Christ is quite clear about our obligations to the poor. How as 
@@ -177,15 +180,15 @@ MAT 7:3 And why beholdest thou the mote that is in thy brother's eye, but
 considerest not the beam that is in thine own eye? Or how wilt thou say to
 thy brother, Let me pull out the mote out of thine eye; and, behold, a beam
 is in thine own eye?  
-Feature: adam, Importance: 0.0689
-Feature: flaming, Importance: 0.0619
-Feature: god, Importance: 0.0541
-Feature: bible, Importance: 0.0141
-Feature: jesus, Importance: 0.0106
-Feature: religion, Importance: 0.0084
-Feature: church, Importance: 0.0054
-Feature: morality, Importance: 0.0053
-Feature: christians, Importance: 0.0042
+- Feature: adam, Importance: 0.0689
+- Feature: flaming, Importance: 0.0619
+- Feature: god, Importance: 0.0541
+- Feature: bible, Importance: 0.0141
+- Feature: jesus, Importance: 0.0106
+- Feature: religion, Importance: 0.0084
+- Feature: church, Importance: 0.0054
+- Feature: morality, Importance: 0.0053
+- Feature: christians, Importance: 0.0042
 
 
 ## Improving our pipeline
