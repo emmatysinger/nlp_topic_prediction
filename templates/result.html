@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Classification Result</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Classification Result</h1>
+        <p><strong>Sample:</strong> {{ sample }}</p>
+        <p><strong>Prediction:</strong> {{ prediction }}</p>
+        <h2>Explanation</h2>
+        <ul>
+            {% for feature, weight in explanation %}
+                <li>{{ feature }}: {{ weight }}</li>
+            {% endfor %}
+        </ul>
+        <a href="{{ url_for('index') }}">Submit another sample</a>
+    </div>
+</body>
+</html>

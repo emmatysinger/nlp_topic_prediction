@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Classifier</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Submit a Text Sample</h1>
+        <form action="{{ url_for('submit_sample') }}" method="post">
+            <textarea name="text" rows="10" cols="50" placeholder="Enter your text here..." required></textarea>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+        {% if error %}
+            <p class="error">{{ error }}</p>
+        {% endif %}
+    </div>
+</body>
+</html>
