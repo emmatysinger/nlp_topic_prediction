@@ -1,16 +1,15 @@
 import argparse
 from sklearn.datasets import fetch_20newsgroups
 from sklearn.tree import DecisionTreeClassifier
-from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
+from sklearn.ensemble import RandomForestClassifier
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.preprocessing import StandardScaler
 from sklearn.pipeline import Pipeline
 import numpy as np
 from sklearn.metrics import accuracy_score, precision_recall_fscore_support, confusion_matrix, ConfusionMatrixDisplay, PrecisionRecallDisplay, RocCurveDisplay
-import matplotlib.pyplot as plt
 import random
 from sklearn.model_selection import GridSearchCV
-import src.explainability as explainability
+import explainability as explainability
 import joblib
 
 def prepare_target(bunch, binary_target):
